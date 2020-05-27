@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Form Post test</title>
+  </head>
+  <body>
+    <form action="/submit" method="post" target="_blank">
+      <p>
+        Submit the form below (it should open a new tab with a post request)
+      </p>
+      <input type="text" name="value" value="12345" />
+      <button>Submit</button>
+    </form>
+    <form action="/submit" method="post">
+      <p>
+        Submit the form below (it should open the same tab with a post request)
+      </p>
+      <input type="text" name="value" value="12345" />
+      <button>Submit</button>
+    </form>
+    <form action="/submit">
+      <p>
+        Submit the form below (it should open the same tab with a get request)
+      </p>
+      <input type="text" name="value" value="12345" />
+      <button>Submit</button>
+    </form>
+    <form action="/submit" target="_blank">
+      <p>Submit the form below (it should open a new tab with a get request)</p>
+      <input type="text" name="value" value="12345" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
